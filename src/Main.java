@@ -1,3 +1,4 @@
+import br.com.dio.desafio.dominio.Conteudo;
 import br.com.dio.desafio.dominio.Curso;
 import br.com.dio.desafio.dominio.Mentoria;
 
@@ -7,6 +8,11 @@ public class Main {
     public static void main(String[] args) {
         Curso curso1 = new Curso();
         Curso curso2 = new Curso();
+
+        //tudo que tem dentro de Conteudo tem em Curso, mas tudo que tem em Curso não tem em Conteúdo
+        Conteudo conteudo = new Curso();
+        //conteudo.toString();
+
 
         curso1.setTitulo("Curso Java");
         curso1.setDescricao("Descrição curso Java");
@@ -25,5 +31,6 @@ public class Main {
         System.out.println(curso1);
         System.out.println(curso2);
         System.out.println(mentoria);
+        System.out.println(conteudo);
     }
 }
